@@ -1,1 +1,51 @@
-%h1 Hello
+.ui.grid
+  .three.wide.column{style: 'padding-top: 0; padding-right: 0'}
+    .ui.vertical.pointing.menu{style: 'width: 100%'}
+      %a.item.active
+        Tara
+      %a.item
+        Dan
+      %a.item
+        Adam
+
+  .ten.wide.column.chatbox{style: 'border: 1px solid #ccc'}
+    %h2.ui.aligned.medium.icon.header
+      %i.circular.inverted.teal.comment.icon
+      MessageMe
+    .ui.feed.container
+      %h4.ui.header Followers Activity
+      .event
+        .content
+          .summary
+            %em Elliot Fu
+            added
+            %em Jenny Hess
+            as a friend
+      .event
+        .content
+          .summary
+            %em Stevie Feliciano
+            added
+            %em Elliot Fu
+            as a friend
+      .event
+        .content
+          .summary
+            %em Helen Troy
+            added
+            %em Christian Rocha
+            as a friend
+      .event
+        .content
+          .summary
+            %em Christian Rocha
+            signed up for the  site.
+      .extra.content
+        %form.ui.reply.form
+          .field
+            .ui.fluid.icon.input
+              %input{ type: 'text', placeholder: 'Enter a message' }
+              %i.bordered.inverted.teal.icon.edit
+
+  .three.wide.column
+
